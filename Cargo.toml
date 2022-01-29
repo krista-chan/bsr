@@ -1,0 +1,15 @@
+[package]
+name = "bsr-client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+twitchchat = { version = "0.14.8", features = ["async", "tokio", "tokio-util"] }
+tokio = { version = "0.2.25", features = ["full"] }
+dotenv = "0.15.0"
+anyhow = "1.0.53"
+reqwest = { version = "0.11.9", features = ["json", "blocking"] }
+json = "0.12.4"
+zip = "0.5.13"
